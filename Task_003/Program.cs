@@ -38,21 +38,14 @@ for(int i = 0; i < n; i++) // заполняем массив
     Console.Write($" {array[i]}");
 }
 
-int max = 0;
-int min = 0;
-for (int i = 0; i < n-1; i++) // ищем мин. и макс. значение в массиве
-{
-    if (i == 0)
-    {
-        min = array[i];
-        max = array[i];
-    }
+int min = array[0];
+int max = array[0];
     for(int j = 1; j < n; j++)
     {
         min = Min(min, array[j]);
         max = Max(max, array[j]);
     }
-}
+
 int result = max - min;
 Console.WriteLine();
 Console.WriteLine($"разница между максимальным и минимальным элементов массива = {result}");
