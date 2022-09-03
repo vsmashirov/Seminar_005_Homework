@@ -47,12 +47,6 @@ for (int i = 0; i < n-1; i++) // ищем мин. и макс. значение 
         min = array[i];
         max = array[i];
     }
-    else
-    {
-        min = Min(min, array[i]);
-        max = Max(max, array[i]);
-
-    }
     for(int j = 1; j < n; j++)
     {
         min = Min(min, array[j]);

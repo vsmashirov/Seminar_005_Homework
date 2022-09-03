@@ -16,7 +16,7 @@ for(int i = 0; i < n; i++)
 {
     array[i] = new Random().Next(-10, 10);
     Console.Write($" {array[i]}");
-    if((i+1)%2 == 0 && array[i]%2 == 0)
+    if((i)%2 > 0 && array[i]%2 == 0)
     {
         sum += array[i];
     }
